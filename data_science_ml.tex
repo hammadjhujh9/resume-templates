@@ -1,0 +1,221 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    {\Huge \scshape Hammad Tufail} \\ \vspace{1pt}
+    Johar Town, Lahore \\ \vspace{1pt}
+    \small 
+    \raisebox{-0.1\height}\faPhone\ \underline{+92 300 0466011}  ~ 
+    \href{mailto:hammadjhujh9@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ \underline{hammadjhujh9@gmail.com}} ~ 
+    \href{https://github.com}{\raisebox{-0.2\height}\faGithub\ \underline{Github}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {FAST National University of Computer \& Emerging Sciences}{2021 -- 2025}
+      {Bachelor of Science in Computer Science}{Lahore, Pakistan}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Programmers Force}{July 2025 -- Present}
+      {Associate Data Scientist / Machine Learning Engineer}{Lahore, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Leading AI-driven product initiatives focused on model optimization, rapid prototyping, and production deployment}
+        \resumeItem{Developing, fine-tuning, and evaluating machine learning models for text processing, identity verification, and automation systems}
+        \resumeItem{Implementing scalable model pipelines using quantization, batching, and distributed processing}
+        \resumeItem{Collaborating with cross-functional teams to enhance product performance}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Programmers Force}{Jan 2025-Jun 2025}
+      {Associate Data Analyst}{Lahore, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Worked on backend data systems using SQL and MongoDB for operational and analytical workflows}
+        \resumeItem{Executed raw queries on Shufti Pro portal to extract relevant verification and compliance datasets}
+        \resumeItem{Performed data analysis and forwarded actionable insights to relevant teams for issue resolution}
+        \resumeItem{Built multiple dashboards connected directly with MongoDB for real-time data visualization and reporting}
+      \resumeItemListEnd
+    % \resumeSubheading
+    %   {Digitalytics (Remote, USA)}{Sep 2025 -- Dec 2025}
+    %   {Machine Learning Engineer / Quant Developer}{Remote}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed automated trading bots for ES, NQ, YM, and RTY futures assets}
+    %     \resumeItem{Used AWS infrastructure to fetch and process real-time and historical market data}
+    %     \resumeItem{Built machine learning models to interpret trading signals and generate buy/sell decisions}
+    %     \resumeItem{Integrated data pipelines and model inference logic for live trading execution}
+    %   \resumeItemListEnd
+    \resumeSubheading
+      {Machine Learning 1}{May 2024 -- Dec 2024}
+      {Associate Software \& AI Engineer}{Lahore, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Optimized KYC and KYB workflows using Shufti Pro, improving verification speed and accuracy}
+        \resumeItem{Enhanced ID card authentication pipelines using AI-driven strategies}
+        \resumeItem{Tuned ML models using Anaconda and Jupyter Notebook with quantization techniques}
+        \resumeItem{Contributed to scalable regulatory-compliant identity verification deployments}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {CapperSoft}{Feb 2024 -- May 2024}
+      {Operations Manager}{Lahore, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Led AI prototype teams and optimized annotation pipelines for training datasets}
+        \resumeItem{Improved operational workflows and quality assurance processes}
+        \resumeItem{Developed financial strategies supporting business growth}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tower Technologies}{Jun 2023 -- Aug 2023}
+      {Junior Python Developer}{Lahore, Pakistan}
+      \resumeItemListStart
+        \resumeItem{Built Django-based applications and scalable RESTful APIs}
+        \resumeItem{Used PostgreSQL for advanced queries and Postman for API testing}
+        \resumeItem{Containerized backend services using Docker for deployment and scaling}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-20pt}
+
+%-----------PROJECTS-----------
+
+\section{Projects}
+  \vspace{-5pt}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Shalmionline.pk E-Commerce Platform} $|$ \emph{Full Stack Development}}{}
+      \resumeItemListStart
+        \resumeItem{Developed UI/UX, backend APIs, database integration, and production deployment pipeline}
+      \resumeItemListEnd
+      \vspace{-18pt}
+
+    \resumeProjectHeading
+      {\textbf{AI-Powered Identical Twin Assistant} $|$ \emph{Generative AI}}{}
+      \resumeItemListStart
+        \resumeItem{Built generative AI system to mimic user behavior and automate digital interactions}
+      \resumeItemListEnd
+      \vspace{-18pt}
+
+    \resumeProjectHeading
+      {\textbf{Campus Explorer Chatbot} $|$ \emph{Real-Time Chat System}}{}
+      \resumeItemListStart
+        \resumeItem{Developed real-time chatbot for campus navigation, events, and administrative support}
+      \resumeItemListEnd
+      \vspace{-18pt}
+
+    \resumeProjectHeading
+      {\textbf{Document Intelligence Model} $|$ \emph{Machine Learning}}{}
+      \resumeItemListStart
+        \resumeItem{Built automated text classification and structured data extraction pipeline for identity verification documents}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------TECHNICAL SKILLS-----------
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: Python, ASP.NET, Laravel} \\
+     \textbf{Frameworks \& Tools}{: Django, REST APIs, LangChain, Docker, WebSockets, Postman} \\
+     \textbf{Databases}{: PostgreSQL, MongoDB} \\
+     \textbf{Frontend}{: Vue.js, TailwindCSS} \\
+     \textbf{AI \& ML Tools}{: Anaconda, Model Quantization, Deployment Pipelines} \\
+     \textbf{Version Control}{: GitHub, Project Management} \\
+    }}
+ \end{itemize}
+
+\end{document}
